@@ -15,7 +15,7 @@ class CommonProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Get.to(ProductDetailsPage(products: product)),
+      onTap: () => Get.to(() => ProductDetailsPage(products: product)),
       child: Card(
         elevation: 5,
         child: Padding(
