@@ -5,4 +5,6 @@ class AppConst {
   static String PRODUCTS = 'products/';
 
   static String IMAGEPLACEHOLDER = 'https://placehold.co/600x400';
+
+  static String RESPONSEBODYNULL = 'response-body-null';
 }

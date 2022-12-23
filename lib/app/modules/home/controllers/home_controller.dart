@@ -5,11 +5,6 @@ import 'package:get/get.dart';
 class HomeController extends GetxController {
   RxList<Products?> productsList = <Products?>[].obs;
 
-  // @override
-  // void onInit() {
-  //   super.onInit();
-  // }
-
   @override
   void onReady() {
     populateList();

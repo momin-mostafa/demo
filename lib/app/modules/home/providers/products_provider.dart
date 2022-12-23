@@ -31,6 +31,12 @@ class ProductsProvider extends GetConnect {
         );
       },
     );
+
+    if (response.body == null) {
+      debugPrint("${response.statusCode}");
+    }
+    assert(response.body == null, AppConst.RESPONSEBODYNULL);
+
     return response.body;
   }
 
