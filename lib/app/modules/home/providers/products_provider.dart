@@ -34,8 +34,10 @@ class ProductsProvider extends GetConnect {
 
     if (response.body == null) {
       debugPrint("${response.statusCode}");
+      debugPrint(
+          "DEBUG ==>Please Chcek internet connection : ${AppConst.RESPONSEBODYNULL}");
     }
-    assert(response.body == null, AppConst.RESPONSEBODYNULL);
+    // assert(response.body == null, AppConst.RESPONSEBODYNULL);
 
     return response.body;
   }
