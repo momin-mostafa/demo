@@ -12,7 +12,11 @@ class HomeController extends GetxController {
   }
 
   void populateList() async {
-    productsList.value = await Get.find<ProductsProvider>().getProducts();
+    try {
+      productsList.value = await Get.find<ProductsProvider>().getProducts();
+    } catch (e) {
+      populateList();
+    }
   }
 
   List handleResponse(Future list) {
